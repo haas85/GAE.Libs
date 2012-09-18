@@ -2,7 +2,7 @@
 # SERVICEHANDLER
 # Copyright (c) 2011-2012
 #
-# Author: Inigo Gonzaelz Vazquez - @haas85
+# Author: Inigo Gonzalez Vazquez - @haas85
 # =============================================================================
 
 import base64
