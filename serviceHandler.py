@@ -118,7 +118,7 @@ class ServiceHandler(webapp2.RequestHandler):
     def getParameters(self):
         if ('Content-Type' in self.request.headers) and ('multipart/form-data' in self.request.headers['Content-Type']):
             self.parameters = {}
-            form = cgi.FieldStorage()
+            form = self.request.POST
             for arg in form:
                 if str(arg) not in self.parameters:
                     self.parameters[str(arg)] = []
