@@ -13,10 +13,10 @@ import cgi
 
 import logging
 
-import webapp2
+from google.appengine.ext import webapp
 
 
-class ServiceHandler(webapp2.RequestHandler):
+class ServiceHandler(webapp.RequestHandler):
     contentAccept = {
         'PLAIN': {'content': 'text/plain', 'attach': False},
         'HTML': {'content': 'text/html', 'attach': False},
